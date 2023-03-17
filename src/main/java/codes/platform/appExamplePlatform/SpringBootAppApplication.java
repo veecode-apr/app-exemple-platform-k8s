@@ -16,7 +16,7 @@ public class SpringBootAppApplication {
 	}
 	
 	@RestController
-	@RequestMapping("/")
+	@RequestMapping("/info")
 	class K8sController {
 
 		@GetMapping
