@@ -58,7 +58,7 @@ jobs:
           .metadata.annotations."instrumentation.opentelemetry.io/inject-java"= "true" | 
           del(.metadata.creationTimestamp) | del(.status) |
           .metadata.labels."backstage.io/kubernetes-id"="app-exemple-platform-k8s"''' -i ./k8s/service.yaml
-          yq e '.spec.selector.app="app-exemple-platform-obs"' -i ./k8s/service.yaml
+          yq e '.spec.selector.app="app-exemple-platform-k8s"' -i ./k8s/service.yaml
 
           kubectl create ingress app-exemple-platform-k8s --class=kong --namespace=vkpr \
           --annotation "cert-manager.io/cluster-issuer"="certmanager-issuer" \
