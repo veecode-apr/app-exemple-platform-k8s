@@ -36,7 +36,7 @@ contents: "openapi: 3.0.0
 
   servers:
 
-  \  - url: https://rest.platform.vee.codes/app-exemple-platform-k8s
+  \  - url: https://rest.apr.vee.codes/app-exemple-platform-k8s
   
   tags:
 
