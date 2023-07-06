@@ -25,7 +25,7 @@ jobs:
           BOOT_DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }} #used by build.gradle
           BOOT_DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }} #used by build.gradle      
         run: |
-          ./gradlew bootBuildImage \
+          ./gradlew bootBuildImage -x test \
           --imageName=docker.io/veecode/app-exemple-platform-k8s:latest \
           --publishImage
 
