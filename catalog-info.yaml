@@ -11,6 +11,8 @@ metadata:
     grafana/alert-label-selector: "alertname=app-exemple-platform-k8s"
     argocd/proxy-url: '/argocd/api'
     argocd/app-name: "app-exemple-platform-k8s"
+    kong-manager/service-name: vkpr.app-exemple-platform-k8s.app-exemple-platform-k8s-service-0.8081
+    kong-manager/instance: /kong-manager/api
 spec:
   type: service
   lifecycle: experimental
